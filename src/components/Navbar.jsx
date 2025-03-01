@@ -2,6 +2,7 @@ import { HiMiniBars2 } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiBoltCircle } from "react-icons/bi";
 import { useState } from "react"
+import { FaArrowRight } from "react-icons/fa6";
 
 const Navbar = () => {
   const[menuOpen, setMenuOpen] = useState(false)
@@ -40,7 +41,10 @@ const Navbar = () => {
         </div>
         {/* get btn */}
     
-      <button className="hidden md:block py-1  rounded-xl  hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 px-2 gap-2 ">Get In Touch</button>  
+     <div className="flex items-center  py-1  rounded-xl  hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 px-2 gap-2">
+     <button className="hidden md:block ">Connect </button> 
+     <FaArrowRight className="hover:p-1"/>  
+     </div>
       </div>
        {/* mobile menu icons */}
        {
@@ -57,7 +61,7 @@ const Navbar = () => {
                   className={`block text-center py-2 hover:text-orange-600 transition-all duration-300 ${active === item. href ? "text-orange-600 font-bold" : "text-white"} `}  href={item.href} >{item.label}</a>
                 ))  
               }
-                <button className="w-full md:hidden py-1 px-2 rounded-lg hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 hover:bg-purple-950 ">Get In Touch</button>
+                <button className="w-full md:hidden py-1 px-2 rounded-lg hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 hover:bg-purple-950 ">connect</button>
             </div>
           </div>
          )
