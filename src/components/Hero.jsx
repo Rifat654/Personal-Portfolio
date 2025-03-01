@@ -2,7 +2,7 @@ import img from "../assets/rifat.jpg"
 import { FaArrowRight } from "react-icons/fa6";
 const Hero = () => {
   return (
-   <div id="home" className="w-full h-screen flex items-center justify-end ">
+   <div id="home" className="w-full  h-full pt-20 flex items-center justify-end ">
     <section className="flex flex-col-reverse md:flex-row justify-between w-3/4 mx-auto items-center">
       {/* left column */}
    <div className="w-full md:w-1/2 mt-4 md:mt container mx-auto md:mx-0 text-center md:text-left text-white">

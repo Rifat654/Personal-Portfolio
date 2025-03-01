@@ -8,6 +8,7 @@ const Navbar = () => {
   const [active, setActive] = useState("#home")
   const nav = [
     {href: "#home", label: "Home"},
+    {href: "#services", label: "Services"},
     {href: "#about", label: "About"},
     {href: "#skills", label: "Skills"},
     {href: "#projects", label: "Projects"}
