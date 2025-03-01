@@ -1,5 +1,10 @@
 import img from "../assets/rifat.jpg"
 import { FaArrowRight } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { GrLinkedin } from "react-icons/gr";
+
+
 const Hero = () => {
   return (
    <div id="home" className="w-full  h-full pt-20 flex items-center justify-end ">
@@ -11,6 +16,11 @@ const Hero = () => {
       <div className="flex items-center justify-center md:justify-start gap-2 cursor-pointer text-center">
       <button className=" text-white cursor-pointer"><span className="text-lg">C</span>ontact Me</button>
       <FaArrowRight  className="hover:border hover:rounded-full hover:border-white transition-all duration-200 hover:p-1 "/>
+      </div>
+      <div className="social flex items-center gap-4 pt-5 cursor-pointer justify-center sm:justify-start">
+        <FaFacebookSquare/>
+       <FaGithub/>
+       <GrLinkedin/>
       </div>
    </div>
          {/* right column */}
