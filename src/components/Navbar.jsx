@@ -10,9 +10,9 @@ const Navbar = () => {
   const nav = [
     {href: "#home", label: "Home"},
     {href: "#services", label: "Services"},
-    {href: "#about", label: "About"},
     {href: "#skills", label: "Skills"},
-    {href: "#projects", label: "Projects"}
+    {href: "#projects", label: "Projects"},
+    {href: "#contact", label: "Contact"},
   ]
   return (
     <nav className="fixed top-0 left-0 right-0 text-white  backdrop-blur-md shadow-md p-4 z-50">
@@ -41,9 +41,9 @@ const Navbar = () => {
         </div>
         {/* get btn */}
     
-     <div className="flex items-center  py-1  rounded-xl  hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 px-2 gap-2">
-     <button className="hidden md:block ">Connect </button> 
-     <FaArrowRight className="hover:p-1"/>  
+     <div>
+     
+     <FaArrowRight className="hover:p-1 cursor-pointer"/>  
      </div>
       </div>
        {/* mobile menu icons */}
@@ -61,7 +61,7 @@ const Navbar = () => {
                   className={`block text-center py-2 hover:text-orange-600 transition-all duration-300 ${active === item. href ? "text-orange-600 font-bold" : "text-white"} `}  href={item.href} >{item.label}</a>
                 ))  
               }
-                <button className="w-full md:hidden py-1 px-2 rounded-lg hover:border-purple-800 text-white cursor-pointer hover:shadow-cyan-200 hover:shadow-sm duration-200 hover:bg-purple-950 ">connect</button>
+               
             </div>
           </div>
          )

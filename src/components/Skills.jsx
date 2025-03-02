@@ -13,7 +13,7 @@ const Skills = () => {
       </div>
     <div className="px-2 md:px-0">
      <div className="  w-full  md:w-[80%] h-auto md:h-[150px] container mx-auto rounded-3xl flex items-center justify-center  ">
-     <div className=" py-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5 md:gap-2">
+     <div className=" py-5 grid grid-cols-3  md:grid-cols-6 gap-5 md:gap-2">
       {
         logos.map((logo,index) =>(
           <div key={index} className="mx-2">
