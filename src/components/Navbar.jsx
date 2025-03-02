@@ -14,6 +14,7 @@ const Navbar = () => {
     {href: "#projects", label: "Projects"},
     {href: "#contact", label: "Contact"},
   ]
+ 
   return (
     <nav className="fixed top-0 left-0 right-0 text-white  backdrop-blur-md shadow-md p-4 z-50">
       <div className="w-full container mx-auto flex items-center justify-between ">
