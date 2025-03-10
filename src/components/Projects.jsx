@@ -10,10 +10,10 @@ const Projects = () => {
     return (
         <div id="projects" className="py-20">
             <div>
-                <h1 className="text-center text-5xl text-white">Vertical Timeline</h1>
+                <h1 className="text-center text-4xl font-light py-16 text-white">Projects Section</h1>
             </div>
             <div>
-                <VerticalTimeline className="bg-transparent overflow-hidden">
+                <VerticalTimeline className="bg-transparent overflow-hidden" >
                     {/* First Project */}
                     <VerticalTimelineElement
                         className="cursor-pointer overflow-hidden"
