@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body{
+    background-color: black;
+}
 /* background image using Skills component section */
 /* .back{
     background-image:url(./assets/back.jpg);
