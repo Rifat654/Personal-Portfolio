@@ -4,7 +4,7 @@ import { GrLinkedin } from "react-icons/gr";
 const Footer = () => {
 
   return (
-    <div className="pt-16 text-center">
+    <div className="py-16 text-center">
       <h1 className="text-center text-2xl font-[15px]">Thank You For Visiting</h1>
       <div className="flex items-center justify-center pt-5 gap-4">
         <a href="https://www.facebook.com/ijack.rifat"> <FaFacebookSquare /></a>
