@@ -1,5 +1,6 @@
 import { RiFocus3Fill } from "react-icons/ri";
 import { ImGithub } from "react-icons/im";
+import { SiNetlify } from "react-icons/si";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import card1 from "../assets/American-express.jpg"
@@ -26,7 +27,7 @@ const Projects = () => {
                         <div className="back">
                             <img src={card1} alt="Project Image" />
                             <a href="https://react-animation-0241.netlify.app/">
-                                <ImGithub className="text-xl" />
+                                <SiNetlify className="text-xl hover:shadow-green-600 hover:shadow-lg transition-all duration-300" />
                             </a>
                         </div>
                     </VerticalTimelineElement>
@@ -43,7 +44,7 @@ const Projects = () => {
                         <div className="back">
                             <img src={card2} alt="Project Image" />
                             <a href="https://rifat654.github.io/Gaming-World/">
-                                <ImGithub className="text-xl" />
+                                <ImGithub className="text-xl hover:shadow-green-600 hover:shadow-lg transition-all duration-300" />
                             </a>
                         </div>
                     </VerticalTimelineElement>
@@ -60,7 +61,7 @@ const Projects = () => {
                         <div className="back">
                             <img src={card3} alt="Project Image" />
                             <a href="https://rifat654.github.io/Tailwindcss-web-page/">
-                                <ImGithub className="text-xl" />
+                                <ImGithub className="text-xl hover:shadow-green-600 hover:shadow-lg transition-all duration-300" />
                             </a>
                         </div>
                     </VerticalTimelineElement>
