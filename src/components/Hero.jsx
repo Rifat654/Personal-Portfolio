@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="social flex items-center gap-4 pt-5 cursor-pointer justify-center sm:justify-start sm:text-xl">
             <a href="https://www.facebook.com/ijack.rifat"> <FaFacebookSquare /></a>
             <a href="https://github.com/Rifat654"><FaGithub /></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"><GrLinkedin /></a>
+            <a href="https://www.linkedin.com/in/rifat654/"><GrLinkedin /></a>
           </div>
         </div>
         {/* right column */}
