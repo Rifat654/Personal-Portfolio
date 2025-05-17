@@ -1,26 +1,39 @@
+import { LuEyeClosed } from "react-icons/lu";
+import { MdRemoveRedEye } from "react-icons/md";
+import { data } from "../Data"
+import { useState } from "react";
 const Service = () => {
-   
-    const services = [
-        { title: "Custom Website Development", description: "Build modern, responsive, and high-performance websites from scratch." },
-        { title: "React.js Development", description: "Develop scalable and interactive web applications using React.js." },
-        { title: "UI/UX Design Implementation", description: "Convert Figma, Adobe XD, or Sketch designs into pixel-perfect UI." },
-        { title: "Performance Optimization", description: "Improve site speed, SEO, and accessibility for a better user experience." },
-        { title: "Responsive Web Design", description: "Ensure your website looks great on all screen sizes and devices." },
-        { title: "API Integration", description: "Seamlessly connect your frontend with backend services and third-party APIs." }
-      ];
 
+  const [show, setShow] = useState(false)
+
+  const click = (id) => {
+    setShow(id)
+
+  }
   return (
     <div id="services" className="py-16 ">
-    <h2 className="text-3xl font-bold text-center mb-6"> Services</h2>
-    <div className="w-full px-4 sm:px-0 sm:w-[70%] container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {services.map((service, index) => (
-        <div key={index} className=" border-gray-700 border p-6 rounded-2xl shadow-lg hover:shadow-md transition duration-300 cursor-pointer hover:shadow-slate-500 ">
-          <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-          <p className="text-gray-600">{service.description}</p>
-        </div>
-      ))}
+      <h2 className="text-3xl font-bold text-center mb-6"> Services</h2>
+      <div className="w-full px-4 sm:px-0 sm:w-[70%] container flex flex-col items-center justify-center mx-auto gap-6">
+        {
+          data.map((item) => {
+            return (
+              <div onClick={() => click(item.id)} key={item.id} className="w-full sm:w-[600px] p-5 rounded-lg  border">
+                <div className="flex items-center justify-between ">
+                  <h2>{item.question}</h2>
+                  <span>{show === item.id ? <MdRemoveRedEye /> : <LuEyeClosed />}</span>
+                </div>
+                {
+                  show === item.id ?
+                    <p>{item.answer}</p> : null
+                }
+
+              </div>
+
+            )
+          })
+        }
+      </div>
     </div>
-  </div>
   )
 }
 
