@@ -3,13 +3,13 @@ import { MdRemoveRedEye } from "react-icons/md";
 import { data } from "../Data"
 import { useState } from "react";
 const Service = () => {
-
   const [show, setShow] = useState(false)
 
   const click = (id) => {
-    setShow(id)
+    setShow(prev => (prev === id ? null : id));
 
   }
+
   return (
     <div id="services" className="py-16 ">
       <h2 className="text-3xl font-bold text-center mb-6"> Services</h2>
@@ -27,10 +27,8 @@ const Service = () => {
                     show === item.id ?
                       <p className="text-gray-400">{item.answer}</p> : null
                   }
-
                 </div>
               </div>
-
             )
           })
         }
