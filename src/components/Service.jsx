@@ -17,16 +17,18 @@ const Service = () => {
         {
           data.map((item) => {
             return (
-              <div onClick={() => click(item.id)} key={item.id} className="w-full sm:w-[600px] p-5 rounded-lg  border">
+              <div onClick={() => click(item.id)} key={item.id} className="w-full sm:w-[600px] p-5 rounded-lg  border hover:shadow-md hover:shadow-sky-100 ">
                 <div className="flex items-center justify-between ">
-                  <h2>{item.question}</h2>
-                  <span>{show === item.id ? <MdRemoveRedEye /> : <LuEyeClosed />}</span>
+                  <h2 className="text-xl font-semibold">{item.question}</h2>
+                  <span className="cursor-pointer">{show === item.id ? <MdRemoveRedEye /> : <LuEyeClosed />}</span>
                 </div>
-                {
-                  show === item.id ?
-                    <p>{item.answer}</p> : null
-                }
+                <div className="mt-4">
+                  {
+                    show === item.id ?
+                      <p className="text-gray-400">{item.answer}</p> : null
+                  }
 
+                </div>
               </div>
 
             )
